@@ -21,3 +21,5 @@ as evaluation is then clear-cut, and is measured simply as right or wrong.
   * **Adaptive memories** performing a variable number of hops rather than 2, the model is trained to predict a hop or the special “STOP” class. A similar procedure can be applied to output multiple tokens as well.
   * **N-grams** We tried using a bag of 3-grams rather than a bag-of-words to represent the text. In both cases the first step of the MemNN is to convert these into vectorial embeddings.
   * **Nonlinearity** We apply a classical 2-layer neural network with tanh nonlinearity in the matching function.
+  
+  
