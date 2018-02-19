@@ -11,7 +11,25 @@
 
 **Problem Description**
 * According to [01], any system aiming at full text understanding and reasoning must perform well on all the 20 types of tasks they suggested. these tasks should be trained seperately rather jointly using end-to-end memory networks(MemN2N). 
-
+* Examples tasks: 
+  * **Task 1: Single Supporting Fact**
+    * **Story**: * Mary went to the bathroom. * John moved to the hallway. * Mary travelled to the office.
+    * **Question**: Where is Mary? 
+    * **Answer**: office
+  * **Task 3: Three Supporting Facts**
+    * **Story**: * John picked up the apple. * John went to the office. * John went to the kitchen. * John dropped the apple.
+    * **Question**: Where was the apple before the kitchen? 
+    * **Answer**: office  
+  * **Task 19: Path Finding Task 20: Agent’s Motivations**
+    * **Story**: * The kitchen is north of the hallway.
+                 * The bathroom is west of the bedroom.
+                 * The den is east of the hallway. 
+                 * The office is south of the bedroom.
+    * **Q1**: How do you go from den to kitchen? 
+    * **A1**: west, north 
+    * **Q2**: How do you go from office to bathroom?
+    * **A2**: north, west
+    
 **Data Setup**
 * A set of training and test data, with the intention that a successful model performs
 well on test data. The supervision in the training set is given by the true answers to questions, and the set of relevant statements for answering a given question, which may or may not be used by the learner. Correct answers are limited to a
