@@ -7,6 +7,10 @@
 **Glossary**
 * **Deductive reasoning** refers to the act of reaching a conclusion by showing that such a conclusion must follow from a set of premises. In contrast, **inductive reasoning** refers to the act of reaching a conclusion by abstracting or generalizing a premise.
 * **Coreference resolution** is the task of finding all expressions that refer to the same entity in a text. It is an important step for a lot of higher level NLP tasks that involve natural language understanding such as document summarization, question answering, and information extraction.
+* **End-to-End** in deep learning literatures, it means training a model almost from raw training data  directly to target values without other intermidiary procedures(e.g. coreference and semantic role labeling). This is a promising approach if huge amounts of training data available. 
+
+**Problem Description**
+* According to [01], any system aiming at full text understanding and reasoning must perform well on all the 20 types of tasks they suggested. these tasks should be trained seperately rather jointly using end-to-end memory networks(MemN2N). 
 
 **Data Setup**
 * A set of training and test data, with the intention that a successful model performs
