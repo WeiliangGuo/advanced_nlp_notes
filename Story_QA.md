@@ -1,5 +1,6 @@
 **References:**
-* [TOWARDS AI-COMPLETE QUESTION ANSWERING: A SET OF PREREQUISITE TOY TASKS](https://arxiv.org/pdf/1502.05698.pdf)
+* [01.TOWARDS AI-COMPLETE QUESTION ANSWERING: A SET OF PREREQUISITE TOY TASKS](https://arxiv.org/pdf/1502.05698.pdf)
+* [02.End-To-End Memory Networks](https://arxiv.org/pdf/1503.08895.pdf)
 * https://www.quora.com/Logical-Reasoning-Whats-the-difference-between-deduction-and-induction
 * https://nlp.stanford.edu/projects/coref.shtml
 
