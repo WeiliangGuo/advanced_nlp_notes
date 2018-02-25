@@ -3,3 +3,6 @@
 [Introduction to Conditional Random Fields](http://blog.echen.me/2012/01/03/introduction-to-conditional-random-fields/)
 
 Conditional Random Fields are Maximum Entropy Models.Their objective function is based on maximizing the entropy of the model given the constraints in the form of expectation conditions.
+
+References:
+* https://www.researchgate.net/post/Conditional_Random_fields_vs_Maximum_Entropy_Models
