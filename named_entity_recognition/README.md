@@ -2,9 +2,12 @@
 
 **_X = (x<sub>1</sub>; <sub>x2</sub>; : : : ; x<sub>n</sub>)_** is an input sentence of words **_x<sub>i</sub>_**.
 
-**_y = (y<sub>1</sub>; y<sub>2</sub>; : : : ; y<sub>n</sub>)_** is a sequence of predicted tags **_y<sub>i</sub>_** corresponding to each word in above sentence. Each such predicted tag is associated with a score:
+**_y = (y<sub>1</sub>; y<sub>2</sub>; : : : ; y<sub>n</sub>)_** is a sequence of predicted tags **_y<sub>i</sub>_** corresponding to each word in above sentence. Each such predicted tag is associated with a score: 
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=s(X;&space;y)&space;=&space;\sum_{i=0}^{n}A_{y_{i},y_{i&plus;1}}&space;&plus;&space;\sum_{i=1}^{n}P_{i,y_{i}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?s(X;&space;y)&space;=&space;\sum_{i=0}^{n}A_{y_{i},y_{i&plus;1}}&space;&plus;&space;\sum_{i=1}^{n}P_{i,y_{i}}" title="s(X; y) = \sum_{i=0}^{n}A_{y_{i},y_{i+1}} + \sum_{i=1}^{n}P_{i,y_{i}}" /></a>
+
+Shape of **_P_** is <a href="https://www.codecogs.com/eqnedit.php?latex=n*k" target="_blank"><img src="https://latex.codecogs.com/gif.latex?n*k" title="n*k" /></a>, 
+
 
 In [1], ths scores of transition matrix **A** are acquired from feature functions which were described in [2].
 
