@@ -4,6 +4,7 @@
 
 **References:**
 * [Neural Architectures for Named Entity Recognition](https://arxiv.org/pdf/1603.01360.pdf)
+* [CRF Layer on the Top of BiLSTM](https://createmomo.github.io/2017/09/12/CRF_Layer_on_the_Top_of_BiLSTM_1/)
 * [Maximum Entropy Principle](https://www.youtube.com/watch?v=ynCkUHPEDOI&t=616s)
 * [What is Trasition Matrix?](https://www.youtube.com/watch?v=4zg5bNlHZRg&t=20s)
 * [Introduction to Conditional Random Fields](http://blog.echen.me/2012/01/03/introduction-to-conditional-random-fields/)
