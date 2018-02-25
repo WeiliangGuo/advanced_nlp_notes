@@ -3,7 +3,6 @@
 
 
 **References:**
-* [Sequence Tagging With A LSTM-CRF](https://www.depends-on-the-definition.com/sequence-tagging-lstm-crf/)
 * [Neural Architectures for Named Entity Recognition](https://arxiv.org/pdf/1603.01360.pdf)
 * [Maximum Entropy Principle](https://www.youtube.com/watch?v=ynCkUHPEDOI&t=616s)
 * [What is Trasition Matrix?](https://www.youtube.com/watch?v=4zg5bNlHZRg&t=20s)
