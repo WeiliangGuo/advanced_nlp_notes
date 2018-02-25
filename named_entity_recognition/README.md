@@ -6,10 +6,9 @@
 
 Each such predicted tag is associated with a score: <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;s(X;&space;y)&space;=&space;\sum_{i=0}^{n}A_{y_{i},y_{i&plus;1}}&space;&plus;&space;\sum_{i=1}^{n}P_{i,y_{i}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;s(X;&space;y)&space;=&space;\sum_{i=0}^{n}A_{y_{i},y_{i&plus;1}}&space;&plus;&space;\sum_{i=1}^{n}P_{i,y_{i}}" title="s(X; y) = \sum_{i=0}^{n}A_{y_{i},y_{i+1}} + \sum_{i=1}^{n}P_{i,y_{i}}" /></a> , it's a combination of two matrices: **_A_** and **_P_**.
 
- **_A_** is a matrix of transition[3] probabilities such that **_A<sub>i;j</sub>_** represents the probability of a transition from the
-tag **_i_** to tag **_j_**. **_y<sub>0</sub>_** and **_y<sub>n</sub>_** are the start and end tags of a sentence, that we add to the set of possible tags. A is therefore a square matrix of size **_k+2_**(a transition matrix is always a square matrix).
+ **_A_** is a matrix of transition[3] probabilities such that **_A<sub>t;g or t</sub>_** represents the probability of a transition from tag t to tag g or to itself. **_y<sub>0</sub>_** and **_y<sub>n</sub>_** are the start and end tags of a sentence, that we add to the set of possible tags. A is therefore a square matrix of size **_k+2_**(a transition matrix is always a square matrix).
 
-the **_P<sub>i,y</sub>'s_** are the scores associated with each tagging decision for each token which are defined to be the dot product between the embedding of a word-in-context computed with a bidirectional LSTM.
+the **_P<sub>i,y<sub>i</sub></sub>'s_** are the scores associated with each tagging decision for each token which are defined to be the dot product between the embedding of a word-in-context computed with a BLSTM. ht = [−!ht; − ht]
 
 Shape of **_P_** is <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;n*k" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;n*k" title="n*k" /></a>, where **_n_** is the number of words in the sentence, **_k_** is the number of distinct NER tags.
 
