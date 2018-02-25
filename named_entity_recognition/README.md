@@ -8,5 +8,5 @@
 * [3. What is Trasition Matrix?](https://www.youtube.com/watch?v=4zg5bNlHZRg&t=20s)
 * [4. Introduction to Conditional Random Fields](http://blog.echen.me/2012/01/03/introduction-to-conditional-random-fields/)
 * [5. anaGo: an NER package based on Keras framework and BLSTM-CRF model](https://github.com/Hironsan/anago)
-*  6. Andrew Ng's 5th course Sequence Models of Deep Learning
+* [6. Andrew Ng's 5th course Sequence Models of Deep Learning](deeplearning.ai)
 * [Sequence Tagging With A LSTM-CRF](https://www.depends-on-the-definition.com/sequence-tagging-lstm-crf/)
