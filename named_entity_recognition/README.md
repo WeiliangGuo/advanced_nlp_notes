@@ -10,3 +10,12 @@
 * [Introduction to Conditional Random Fields](http://blog.echen.me/2012/01/03/introduction-to-conditional-random-fields/)
 * [anaGo: an NER package based on Keras framework and BLSTM-CRF model](https://github.com/Hironsan/anago)
 * [Andrew Ng's 5th course Sequence Models of Deep Learning](deeplearning.ai)
+
+Running ner_blstm_crf.py
+```
+Loading data...
+14041 train sequences
+3250 valid sequences
+
+words = '"We started running, many of the girls were screaming," Fatima said. "We were running towards the gate.'.split()
+```
