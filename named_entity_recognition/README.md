@@ -17,5 +17,5 @@ Loading data...
 14041 train sequences
 3250 valid sequences
 
-words = '"We started running, many of the girls were screaming," Fatima said. "We were running towards the gate.'.split()
+{'words': ['"We', 'started', 'running,', 'many', 'of', 'the', 'girls', 'were', 'screaming,"', 'Fatima', 'said.', '"We', 'were', 'running', 'towards', 'the', 'gate.'], 'entities': [{'text': '"We', 'type': 'PER', 'score': 1.0, 'beginOffset': 0, 'endOffset': 1}, {'text': 'Fatima', 'type': 'PER', 'score': 1.0, 'beginOffset': 9, 'endOffset': 10}, {'text': '"We', 'type': 'ORG', 'score': 1.0, 'beginOffset': 11, 'endOffset': 12}]}
 ```
