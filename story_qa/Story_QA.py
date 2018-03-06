@@ -2,7 +2,7 @@ __author__ = 'Weiliang Guo'
 
 '''Trains a memory network on the bAbI dataset.
 
-Please refer to story_qa.md while reading this code.
+Please refer to README.md while reading this code.
 
 I modified the example code to follow OOP paradigm and addded more comments.
 
