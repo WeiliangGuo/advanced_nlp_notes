@@ -1,7 +1,7 @@
 # advanced_nlp_notes
 Topics including Visual Question Answering, Image Captioning,etc.
 
-### Codes here are run on my laptop:
+### Codes here are run on my laptop(Mac OS):
 - CPU: 2.81 GHz Intel Core i7
 - Memory: 16GB 2400 MHz DDR4
 
