@@ -1,6 +1,7 @@
 __author__ = 'Weiliang Guo'
 """
 References:
+http://www.wildml.com/2015/11/understanding-convolutional-neural-networks-for-nlp/
 http://colah.github.io/posts/2015-08-Understanding-LSTMs/
 https://machinelearningmastery.com/sequence-classification-text_classifier-recurrent-neural-networks-python-keras/
 """
@@ -23,7 +24,7 @@ class CnnLstmTextClassifier:
     # Pass in hyper-parameters
     def __init__(self, top_words=5000, max_txt_len=500, embed_vector_len=32,
                  cnn_filters=32, cnn_kernel_size=3, cnn_padding='same', cnn_activation='relu',
-                 cnn_pool_size=2, num_memory_cells=100, dropout=0.2, recurrent_dropout=0.2,
+                 cnn_pool_size=2, num_hidden_states=100, dropout=0.2, recurrent_dropout=0.2,
                  activation='sigmoid', loss='binary_crossentropy', optimizer='adam',
                  metrics='accuracy', epochs=3):
 
@@ -71,15 +72,15 @@ class CnnLstmTextClassifier:
         self.cnn_pool_size = cnn_pool_size
 
         # ==== hyper-parameters for LSTM memory cells ==== #
-        # LSTM is theoretically a single-layer neural net, but with
-        # "recurrent" feature, it behaves as if with multiple layers
-        # which each layer is of a memory cell(just like one neuron) with same structure.
-        self.num_memory_cells = num_memory_cells
+        # One LSTM is theoretically a single-layer neural net.
+        # Here num_hidden_states also means setting the dimensionality of the output space, they are same
+        self.num_hidden_states = num_hidden_states
         self.dropout = dropout
         self.recurrent_dropout = recurrent_dropout
         self.activation = activation
 
         # ==== hyper-parameters for training LSTM model ==== #
+        # For binary classification we use binary_crossentropy for calculating loss, otherwise categorical_crossentropy
         self.loss = loss
         # There are many available optimization techniques such as SGD, Adam or RMSProp,
         # we choose Adam because it usually achieves better performance than other ones.
@@ -112,14 +113,14 @@ class CnnLstmTextClassifier:
         model.add(MaxPooling1D(pool_size=self.cnn_pool_size))
 
         # ==== Adding LSTM hidden layer ==== #
-        # dropout is a method to comabt over-fitting.
+        # dropout is a method to combat over-fitting.
         #
         # dropout: Float between 0 and 1.  Fraction of the units
         # to drop for the linear transformation of the inputs.
         #
         # recurrent_dropout: Float between 0 and 1. Fraction of the units
         # to drop for the linear transformation of the recurrent state.
-        model.add(LSTM(self.num_memory_cells, dropout=self.dropout, recurrent_dropout=self.recurrent_dropout))
+        model.add(LSTM(self.num_hidden_states, dropout=self.dropout, recurrent_dropout=self.recurrent_dropout))
 
         # ==== Adding LSTM output layer ==== #
         # It's just your regular densely-connected NN layer.
